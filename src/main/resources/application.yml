@@ -1,0 +1,33 @@
+config:
+ client:
+  message: Some message
+  credential:
+   provider: Random Provider
+   userName: Gagan Gupta
+   password: Pass123
+   client: Wellpoint1234
+   
+---
+spring: 
+ profiles:
+    active: test
+    
+---
+spring:
+ profiles: developement
+datasource: 
+ url: http://dev.com
+ name: Development setup 
+---
+spring:
+ profiles: test
+ 
+datasource: 
+ url: http://test.com
+ name: Test setup 
+ 
+
+
+
+   
+  
